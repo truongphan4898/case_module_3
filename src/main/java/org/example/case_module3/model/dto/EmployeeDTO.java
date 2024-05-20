@@ -1,37 +1,26 @@
-package org.example.case_module3.model;
+package org.example.case_module3.model.dto;
 
 import java.time.LocalDate;
 
-public class Employee {
+public class EmployeeDTO {
     private int employeeId;
     private String name;
     private LocalDate dob;
     private String gender;
 
     private String address;
-    private int positionId;
-    private int departmentId;
 
-    public Employee() {
-    }
+    private String positionName;
+    private String departmentName;
 
-    public Employee(String name, LocalDate dob, String gender, String address, int positionId, int departmentId) {
-        this.name = name;
-        this.dob = dob;
-        this.gender = gender;
-        this.address = address;
-        this.positionId = positionId;
-        this.departmentId = departmentId;
-    }
-
-    public Employee(int employeeId, String name, LocalDate dob, String gender, String address, int positionId, int departmentId) {
+    public EmployeeDTO(int employeeId, String name, LocalDate dob, String gender, String address, String positionName, String departmentName) {
         this.employeeId = employeeId;
         this.name = name;
         this.dob = dob;
         this.gender = gender;
         this.address = address;
-        this.positionId = positionId;
-        this.departmentId = departmentId;
+        this.positionName = positionName;
+        this.departmentName = departmentName;
     }
 
     public int getEmployeeId() {
@@ -74,19 +63,19 @@ public class Employee {
         this.address = address;
     }
 
-    public int getPositionId() {
-        return positionId;
+    public String getPositionName() {
+        return positionName;
     }
 
-    public void setPositionId(int positionId) {
-        this.positionId = positionId;
+    public void setPositionName(String positionName) {
+        this.positionName = positionName;
     }
 
-    public int getDepartmentId() {
-        return departmentId;
+    public String getDepartmentName() {
+        return departmentName;
     }
 
-    public void setDepartmentId(int departmentId) {
-        this.departmentId = departmentId;
+    public void setDepartmentName(String departmentName) {
+        this.departmentName = departmentName;
     }
 }

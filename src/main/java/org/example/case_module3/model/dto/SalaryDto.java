@@ -1,4 +1,4 @@
-package org.example.case_module3.dto;
+package org.example.case_module3.model.dto;
 
 public class SalaryDto {
     private int idEmployee;
